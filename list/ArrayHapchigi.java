@@ -11,11 +11,13 @@ import java.util.StringTokenizer;
 
 public class ArrayHapchigi {
     /*
+    문제 : 배열 합치기
      구현 노트
      1. 두 배열이 주어지면 두 배열을 합쳐 정렬 하는 문제임
      2.  일단 두 배열을 받아보자 --> 해결
      3. 원래 있던 값은 추가 안해도 돼( 탐색) 하고 나서 추가해야함 -->
      4.오름 차순으로 정렬해야해
+
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
