@@ -6,6 +6,10 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class PrStack {
+    /*
+    문제 명 : 스택
+    기본적인 스택 메소드 사용해보는 문제
+     */
     public static void main(String[] args) throws IOException {
         Deque<Integer> stack = new ArrayDeque<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
