@@ -20,6 +20,8 @@ public class Editor {
         Stack<String> rightSt = new Stack<String>();
 
         //처음 커서는 문장의 맨 뒤에서 시작하기 때문에 왼쪽 스택에 초기 문자를 모두 넣어줌 (ex. abc|)
+        // linkedlist 사용했을 경우 처음 부터 끝까지 탐색해야 하기 때문에 다른 자료 구조 생각해야 했음 (시간 초과 남)
+        // 스택을 두개 사용하면 커서 위치를 조정 가능!!!!!
         String[] arr = str.split("");
         for(String s : arr) { //Enhanced For Loop 사용
             leftSt.push(s);
