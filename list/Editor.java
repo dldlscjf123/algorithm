@@ -28,9 +28,6 @@ public class Editor {
         for(int i = 0; i < M; i++) {
             String command = br.readLine();
             char c = command.charAt(0);
-            //StringTokenizer st = new StringTokenizer(reader.readLine());
-            //String c = st.nextToken();
-
             switch(c) {
                 case 'L':
                     if(!leftSt.isEmpty())
