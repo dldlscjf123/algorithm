@@ -38,7 +38,6 @@ public class Que {
                 case "empty":
                     System.out.println(que.isEmpty() ? "1" : "0");
                     break;
-
                 case "front":
                     if (que.isEmpty()) {
                         System.out.println("-1");
