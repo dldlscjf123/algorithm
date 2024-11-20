@@ -8,6 +8,7 @@ import java.util.Deque;
 
 public class Vps {
     /*
+    [silver4]
     스택 괄호 문제
     */
     public static void main(String[] args) throws IOException {
