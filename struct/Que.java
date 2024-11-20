@@ -7,6 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Que {
+    // [silver4] que
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Deque<String> que = new ArrayDeque<>();
