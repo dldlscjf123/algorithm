@@ -7,6 +7,7 @@ import java.util.*;
 
 public class PrStack {
     /*
+    [silver4]
     문제 명 : 스택
     기본적인 스택 메소드 사용해보는 문제
      */
