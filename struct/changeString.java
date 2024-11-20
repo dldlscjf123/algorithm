@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 
 public class changeString {
     /*
+    자료구조
     단어 뒤집기
     문자열 추가 수정-- > 반복문 안에서는 StringBuilder사용생각하기!!!
     첫째 줄에 테스트 케이스의 개수 T가 주어진다. 각 테스트 케이스는 한 줄로 이루어져 있으며,
