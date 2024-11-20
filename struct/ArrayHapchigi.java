@@ -9,6 +9,7 @@ import java.util.StringTokenizer;
 
 public class ArrayHapchigi {
     /*
+    자료구조
     문제 : 배열 합치기
      구현 노트
      1. 두 배열이 주어지면 두 배열을 합쳐 정렬 하는 문제임
