@@ -1,4 +1,4 @@
-package bruteforce.second.structure.list;
+package bruteforce.second.structure.struct;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

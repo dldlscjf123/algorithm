@@ -1,10 +1,9 @@
-package bruteforce.second.structure.list;
+package bruteforce.second.structure.struct;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
-import java.util.Arrays;
 import java.util.Deque;
 
 public class ReverseStringV2 {
@@ -21,7 +20,7 @@ public class ReverseStringV2 {
       연속하는 두 단어는 공백 하나로 구분한다. 태그는 단어가 아니며, 태그와 단어 사이에는 공백이 없다.
 
       -- 구현
-      1. 열린문자나오면 열림 flag true로 두고 닫힌 거 나올 때 sb.append
+      1. 열린문자나오면 열림이면 스택에 있던 값 다 pop flag true로 두고 닫힌 거 나올 때 sb.append
       2. 닫힌문자 나오면 닫힘 flag false
       3. flag false상태일때는 stack.push 근데 공백나오면 pop해서 sb.append
      */
@@ -33,13 +32,13 @@ public class ReverseStringV2 {
         StringBuilder sb = new StringBuilder();
         boolean flag = false;
         for (int i = 0; i < string.length(); i++) {
-            if(string.charAt(i)=='<'){
-                while (!stack.isEmpty()){
+            if(string.charAt(i)== '<'){
+                while(!stack.isEmpty()){
                     sb.append(stack.pop());
                 }
                 flag = true;
             }
-            else if (string.charAt(i) == '>') {
+            if (string.charAt(i)== '>'){
                 flag = false;
                 sb.append(string.charAt(i));
                 continue;
@@ -47,16 +46,15 @@ public class ReverseStringV2 {
             if (flag == true) {
                 sb.append(string.charAt(i));
             }
-            else if (flag == false) {
-                // 해당 인덱스의 i번째 문자가 공백일 경우, 모든 원소를 POP수행 후 공백 추가
-                if (string.charAt(i) == ' ') {
+            if(flag == false){
+                if(string.charAt(i)==' '){
                     while (!stack.isEmpty()) {
                         sb.append(stack.pop());
                     }
                     sb.append(' ');
                     continue;
-                } else {
-                    // 그외의 경우, Stack에 문자 추가
+                }
+                else{
                     stack.push(string.charAt(i));
                 }
             }
@@ -65,8 +63,6 @@ public class ReverseStringV2 {
                     sb.append(stack.pop());
                 }
             }
-
-
         }
         System.out.println(sb);
 
