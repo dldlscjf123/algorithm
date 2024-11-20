@@ -7,6 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class StackSequence {
+    //[silver2] 스택수열
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Deque<Integer> stack = new ArrayDeque<>();
