@@ -13,8 +13,7 @@ public class FeStick {
     막대기의 길이와 개수만 구하면 끝
     막대기 안에 레이저가 몇개있는지 레이저 개수 +1이 쪼개진 막대기 개수
     괄호가 열려있을 때  스택에 넣는다
-    닫혀있을 때는
-
+    닫혀있을 때는 지금까지 스택에 들어있는 열린괄호 수가 막대기 수이므로 결과값에 더해준다
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
